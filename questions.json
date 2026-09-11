@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What does len() return?",
+    "options": [
+      "The last item",
+      "The number of items",
+      "The first item",
+      "Nothing"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["function", "define", "def", "func"],
+    "answer": 3
+  },
+  {
+    "question": "Which data type stores key-value pairs?",
+    "options": ["List", "Tuple", "Set", "Dictionary"],
+    "answer": 4
+  },
+  {
+    "question": "Which method adds an item to the end of a list?",
+    "options": ["push()", "add()", "append()", "insert()"],
+    "answer": 3
+  },
+  {
+    "question": "What does json.load() do?",
+    "options": [
+      "Writes Python data to a JSON file",
+      "Reads JSON data from a file",
+      "Deletes a JSON file",
+      "Creates a Python function"
+    ],
+    "answer": 2
+  }
+]
