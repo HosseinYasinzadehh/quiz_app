@@ -48,6 +48,16 @@ def run_quiz(questions):
     show_result(score, len(questions))
     return score
 
-
 questions = load_questions()
 run_quiz(questions)
+
+while True:
+    try:
+        paly_again = input("Do you want to play again? (y/n): ").lower()   
+    except ValueError:
+        print("please try again between y/n")
+
+    if paly_again == "y":
+        run_quiz(questions)
+    else:
+        break
