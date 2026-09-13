@@ -30,6 +30,14 @@ def ask_question(quiz):
         except ValueError:
             print("please enter number between 1 to 4!!!")
 
+
+def show_result(score,total):
+    print("Quiz Finished! 🎉")
+    print(f"Correct: {score}")
+    print(f"Incorrect: {total - score}")
+    percentage = (score * 100) / total
+    print(f"percentage: {percentage}%")
+
 def run_quiz(questions):
     random.shuffle(questions)
     score = 0
@@ -37,8 +45,9 @@ def run_quiz(questions):
        result = ask_question(quiz)
        if result:
            score += 1
+    show_result(score, len(questions))
     return score
 
+
 questions = load_questions()
-score = run_quiz(questions)
-print(score)
+run_quiz(questions)
